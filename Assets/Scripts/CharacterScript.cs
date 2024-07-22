@@ -10,6 +10,7 @@ public class CharacterScript : MonoBehaviour
     void Start()
     {
         _shadow = GetComponent<CharacterShadow>();
+        _currentColor = Color.black;
     }
 
     // Update is called once per frame
