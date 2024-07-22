@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CharacterScript : MonoBehaviour
 {
-    public Color _currentEffect;
     private CharacterShadow _shadow;
+    private Color _currentColor;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,6 @@ public class CharacterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _shadow.ChangeColor(_currentEffect);
+        _shadow.ChangeColor(_currentColor);
     }
 }

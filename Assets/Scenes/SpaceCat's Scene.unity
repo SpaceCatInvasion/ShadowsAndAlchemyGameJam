@@ -1286,7 +1286,6 @@ MonoBehaviour:
   rb: {fileID: 1938143945}
   moveSpeed: 10
   move: {fileID: 74385576265483602, guid: ec819a4668bb39042929c0f2764bb9c0, type: 3}
-  fire: {fileID: -7811662879568881480, guid: ec819a4668bb39042929c0f2764bb9c0, type: 3}
 --- !u!114 &1938143944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,7 +1402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f50b8ee71726494c88d81e3ba384564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentEffect: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1938143949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,6 +1415,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shadow: {fileID: 87420963}
+--- !u!1 &1975225762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1975225763}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1975225763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975225762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.4226966, y: -0.029802732, z: 0.012420987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1424,3 +1453,4 @@ SceneRoots:
   - {fileID: 932987789}
   - {fileID: 1938143942}
   - {fileID: 1590013326}
+  - {fileID: 1975225763}

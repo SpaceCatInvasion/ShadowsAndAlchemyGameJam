@@ -10,7 +10,6 @@ public class CharacterMovement : MonoBehaviour
     public float moveSpeed;
     private Vector2 _moveDir;
     public InputActionReference move;
-    public InputActionReference fire;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,16 +27,4 @@ public class CharacterMovement : MonoBehaviour
         rb.velocity = new Vector2(_moveDir.x*moveSpeed, _moveDir.y*moveSpeed);
     }
 
-    private void OnEnable()
-    {
-        fire.action.started += Fire;
-    }
-    private void OnDisable()
-    {
-        fire.action.started -= Fire;
-    }
-    private void Fire(InputAction.CallbackContext obj)
-    {
-        Debug.Log("Firing");
-    }
 }
