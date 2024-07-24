@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Damagable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    protected float health = 100;
+    public void TakeDamage(float damage)
     {
-        
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    protected void Die()
     {
-        
+        EnemyManager.enemiesDead++;
+        Destroy(gameObject);
     }
 }
