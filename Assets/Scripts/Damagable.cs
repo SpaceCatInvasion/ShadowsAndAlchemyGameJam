@@ -5,16 +5,27 @@ using UnityEngine;
 public class Damagable : MonoBehaviour
 {
     protected float health = 100;
-    public void TakeDamage(float damage)
+    protected float immunityFrames = 0;
+    public virtual void TakeDamage(float damage)
     {
-        health -= damage;
-        if (health <= 0)
+        if (immunityFrames <= 0)
         {
-            Die();
+            health -= damage;
+            if (health <= 0)
+            {
+                Die();
+            }
         }
     }
-
-    protected void Die()
+    public virtual void Heal(int healHp)
+    {
+        health += healHp;
+    }
+    public virtual void SetImmunityFrames(int frames)
+    {
+        immunityFrames = frames;
+    }
+    protected virtual void Die()
     {
         EnemyManager.enemiesDead++;
         Destroy(gameObject);

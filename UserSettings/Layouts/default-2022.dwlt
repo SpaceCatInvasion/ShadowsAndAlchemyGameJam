@@ -14,17 +14,144 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+    x: 48
+    y: 71.200005
+    width: 1523.2001
+    height: 810.4
+  m_ShowMode: 0
+  m_Title: UI Builder
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_Maximized: 0
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
     x: 0
     y: 43.2
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
-  m_RootView: {fileID: 2}
+  m_Title: Inspector
+  m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &2
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: Builder
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1523.2001
+    height: 810.4
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1523.2001
+    height: 810.4
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 1605
+  draggingID: 0
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 344.8
+    width: 855.2
+    height: 378
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 11}
+  - {fileID: 5}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 855.2
+    height: 722.8
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 1505
+  draggingID: 0
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,9 +164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
-  - {fileID: 5}
-  - {fileID: 4}
+  - {fileID: 8}
+  - {fileID: 9}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -52,7 +179,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &3
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,8 +200,35 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 
---- !u!114 &4
+  m_LastLoadedLayoutName: My Layout
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1536
+    height: 722.8
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 1504
+  draggingID: 0
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,60 +249,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 6}
-  - {fileID: 9}
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 1536
-    height: 722.8
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 26
-  draggingID: 0
---- !u!114 &6
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 7}
-  - {fileID: 8}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 764.8
-    height: 722.8
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 8096, y: 16192}
-  vertical: 1
-  controlID: 27
-  draggingID: 0
---- !u!114 &7
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,43 +266,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 764.8
-    height: 343.2
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+    width: 855.2
+    height: 344.8
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 15}
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 343.2
-    width: 764.8
-    height: 379.59998
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &9
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,20 +288,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 11}
+  - {fileID: 14}
+  - {fileID: 15}
   m_Position:
     serializedVersion: 2
-    x: 764.8
+    x: 855.2
     y: 0
-    width: 377.60004
+    width: 308.8
     height: 722.8
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 51
+  controlID: 1549
   draggingID: 0
---- !u!114 &10
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1164
+    y: 0
+    width: 372
+    height: 722.8
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,16 +344,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 377.60004
+    width: 308.8
     height: 318.4
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 17}
+  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &11
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,44 +370,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 318.4
-    width: 377.60004
+    width: 308.8
     height: 404.4
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 18}
   - {fileID: 19}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1142.4
-    y: 0
-    width: 393.59998
-    height: 722.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
-  m_Panes:
-  - {fileID: 20}
-  - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &13
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -316,20 +389,88 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 363648761, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Script: {fileID: 13999, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: UI Builder
+    m_Image: {fileID: -3932862461143797134, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 48
+    y: 71.200005
+    width: 1523.2001
+    height: 789.4
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: GitHub
-    m_Image: {fileID: 0}
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1142.4
+    x: 855.2
+    y: 392
+    width: 306.8
+    height: 383.4
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1164
     y: 73.6
-    width: 392.59998
+    width: 371
     height: 701.8
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -341,2117 +482,164 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: -1
-  notificationClearTime: -1
-  timeSinceLastRotation: -1
-  currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 1
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
-  changeTab: 3
-  activeTab: 3
-  initProjectView:
-    hasCompletedInitialCheck: 0
-    isUserDataPresent: 0
-    lastCheckUserChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
-      cacheType: 8
-  branchesView:
-    treeLocals:
-      IsRemote: 0
-      folders:
-        keys: []
-        values: []
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: Local branches
-      pathSeparator: /
-      displayRootNode: 1
-      isSelectable: 1
-      isCheckable: 0
-      nodes: []
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-    treeRemotes:
-      IsRemote: 1
-      folders:
-        keys: []
-        values: []
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: Remote branches
-      pathSeparator: /
-      displayRootNode: 1
-      isSelectable: 1
-      isCheckable: 0
-      nodes: []
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-    mode: 0
-    newBranchName: 
-    scroll: {x: 0, y: 0}
-    disableDelete: 0
-    disableCreate: 0
-    lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
-    lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 
-      cacheType: 0
-    currentBranch:
-      name: 
-      tracking: 
-    currentRemote:
-      name: 
-      url: 
-      login: 
-      user: 
-      host: 
-      function: 0
-      token: 
-    localBranches: []
-    remoteBranches: []
-  changesView:
-    currentBranchHasUpdate: 1
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
-    commitBody: 
-    commitMessage: 
-    currentBranch: '[master]'
-    treeScroll: {x: 0, y: 0}
-    treeChanges:
-      assets:
-        keys: []
-        values: []
-      folders:
-        keys:
-        - UserSettings
-        - UserSettings\Layouts
-        values:
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: 
-      pathSeparator: \
-      displayRootNode: 0
-      isSelectable: 1
-      isCheckable: 1
-      isUsingGlobalSelection: 1
-      nodes:
-      - path: 
-        label: 
-        level: -1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        label: default-2022.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-    gitStatusEntries:
-    - path: UserSettings\Layouts\default-2022.dwlt
-      fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Layouts\default-2022.dwlt
-      projectPath: UserSettings\Layouts\default-2022.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 1 changed file
-    lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-07-23T20:32:44.465-04:00
-      cacheType: 1
-    lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-07-23T20:44:58.809-04:00
-      cacheType: 6
-    lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
-      cacheType: 7
-  historyView:
-    currentLogHasUpdate: 0
-    currentTrackingStatusHasUpdate: 0
-    logEntries:
-    - commitID: 2cef9135236ec7b3df92e4aa1f2475b4aab16a19
-      mergeA: 
-      mergeB: 
-      authorName: Space Cats
-      authorEmail: kittieswillkillyouall@gmail.com
-      commitEmail: kittieswillkillyouall@gmail.com
-      commitName: Space Cats
-      summary: stuff
-      description: 
-      timeString: 2024-07-21T21:36:56.000-04:00
-      commitTimeString: 2024-07-21T21:36:56.000-04:00
-      changes:
-      - path: Assets\Scenes\SpaceCat's Scene.unity
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SpaceCat's
-          Scene.unity
-        projectPath: Assets\Scenes\SpaceCat's Scene.unity
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterMovement.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterMovement.cs
-        projectPath: Assets\Scripts\CharacterMovement.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterScript.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterScript.cs
-        projectPath: Assets\Scripts\CharacterScript.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Layouts\default-2022.dwlt
-        projectPath: UserSettings\Layouts\default-2022.dwlt
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-    - commitID: 790e83582ce1831fad7c02d247f0df0acaf23e77
-      mergeA: 
-      mergeB: 
-      authorName: Space Cats
-      authorEmail: kittieswillkillyouall@gmail.com
-      commitEmail: kittieswillkillyouall@gmail.com
-      commitName: Space Cats
-      summary: basic character and basic room
-      description: 
-      timeString: 2024-07-21T15:22:19.000-04:00
-      commitTimeString: 2024-07-21T15:22:19.000-04:00
-      changes:
-      - path: .vsconfig
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\.vsconfig
-        projectPath: .vsconfig
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Actions.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Actions.meta
-        projectPath: Assets\Actions.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Actions\PlayerControls.inputactions
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Actions\PlayerControls.inputactions
-        projectPath: Assets\Actions\PlayerControls.inputactions
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Actions\PlayerControls.inputactions.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Actions\PlayerControls.inputactions.meta
-        projectPath: Assets\Actions\PlayerControls.inputactions.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins.meta
-        projectPath: Assets\Plugins.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub.meta
-        projectPath: Assets\Plugins\GitHub.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor.meta
-        projectPath: Assets\Plugins\GitHub\Editor.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-        projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-        projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-        projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-        projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-        projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-        projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-        projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\System.Threading.dll
-        projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-        projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-        projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\big-logo@2x.png
-        projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-        projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\credits.txt
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\credits.txt
-        projectPath: Assets\Plugins\GitHub\Editor\credits.txt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\credits.txt.meta
-        projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\eula.txt
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\eula.txt
-        projectPath: Assets\Plugins\GitHub\Editor\eula.txt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\eula.txt.meta
-        projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\libsfw.bundle
-        projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-        projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\libsfw.so
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\libsfw.so
-        projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\libsfw.so.meta
-        projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\sfw.net.dll
-        projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x64.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64.meta
-        projectPath: Assets\Plugins\GitHub\Editor\x64.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-        projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-        projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x86.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86.meta
-        projectPath: Assets\Plugins\GitHub\Editor\x86.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-        projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-        projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-        projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes.meta
-        projectPath: Assets\Scenes.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SampleScene.unity
-        projectPath: Assets\Scenes\SampleScene.unity
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SampleScene.unity.meta
-        projectPath: Assets\Scenes\SampleScene.unity.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\SpaceCat's Scene.unity
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SpaceCat's
-          Scene.unity
-        projectPath: Assets\Scenes\SpaceCat's Scene.unity
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\SpaceCat's Scene.unity.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SpaceCat's
-          Scene.unity.meta
-        projectPath: Assets\Scenes\SpaceCat's Scene.unity.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts.meta
-        projectPath: Assets\Scripts.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterDamagable.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterDamagable.cs
-        projectPath: Assets\Scripts\CharacterDamagable.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterDamagable.cs.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterDamagable.cs.meta
-        projectPath: Assets\Scripts\CharacterDamagable.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterMovement.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterMovement.cs
-        projectPath: Assets\Scripts\CharacterMovement.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterMovement.cs.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterMovement.cs.meta
-        projectPath: Assets\Scripts\CharacterMovement.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterScript.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterScript.cs
-        projectPath: Assets\Scripts\CharacterScript.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterScript.cs.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterScript.cs.meta
-        projectPath: Assets\Scripts\CharacterScript.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterShadow.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterShadow.cs
-        projectPath: Assets\Scripts\CharacterShadow.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterShadow.cs.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterShadow.cs.meta
-        projectPath: Assets\Scripts\CharacterShadow.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\Damagable.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\Damagable.cs
-        projectPath: Assets\Scripts\Damagable.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\Damagable.cs.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\Damagable.cs.meta
-        projectPath: Assets\Scripts\Damagable.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Sprites.meta
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Sprites.meta
-        projectPath: Assets\Sprites.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Packages\manifest.json
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Packages\manifest.json
-        projectPath: Packages\manifest.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Packages\packages-lock.json
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Packages\packages-lock.json
-        projectPath: Packages\packages-lock.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\AudioManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\AudioManager.asset
-        projectPath: ProjectSettings\AudioManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ClusterInputManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\ClusterInputManager.asset
-        projectPath: ProjectSettings\ClusterInputManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\DynamicsManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\DynamicsManager.asset
-        projectPath: ProjectSettings\DynamicsManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\EditorBuildSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\EditorBuildSettings.asset
-        projectPath: ProjectSettings\EditorBuildSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\EditorSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\EditorSettings.asset
-        projectPath: ProjectSettings\EditorSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\GraphicsSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\GraphicsSettings.asset
-        projectPath: ProjectSettings\GraphicsSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\InputManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\InputManager.asset
-        projectPath: ProjectSettings\InputManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\MemorySettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\MemorySettings.asset
-        projectPath: ProjectSettings\MemorySettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\NavMeshAreas.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\NavMeshAreas.asset
-        projectPath: ProjectSettings\NavMeshAreas.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\NetworkManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\NetworkManager.asset
-        projectPath: ProjectSettings\NetworkManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\PackageManagerSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\PackageManagerSettings.asset
-        projectPath: ProjectSettings\PackageManagerSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\Physics2DSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\Physics2DSettings.asset
-        projectPath: ProjectSettings\Physics2DSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\PresetManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\PresetManager.asset
-        projectPath: ProjectSettings\PresetManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ProjectSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\ProjectSettings.asset
-        projectPath: ProjectSettings\ProjectSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ProjectVersion.txt
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\ProjectVersion.txt
-        projectPath: ProjectSettings\ProjectVersion.txt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\QualitySettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\QualitySettings.asset
-        projectPath: ProjectSettings\QualitySettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\SceneTemplateSettings.json
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\SceneTemplateSettings.json
-        projectPath: ProjectSettings\SceneTemplateSettings.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\TagManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\TagManager.asset
-        projectPath: ProjectSettings\TagManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\TimeManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\TimeManager.asset
-        projectPath: ProjectSettings\TimeManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\UnityConnectSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\UnityConnectSettings.asset
-        projectPath: ProjectSettings\UnityConnectSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\VFXManager.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\VFXManager.asset
-        projectPath: ProjectSettings\VFXManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\VersionControlSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\VersionControlSettings.asset
-        projectPath: ProjectSettings\VersionControlSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\XRSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\XRSettings.asset
-        projectPath: ProjectSettings\XRSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\EditorUserSettings.asset
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\EditorUserSettings.asset
-        projectPath: UserSettings\EditorUserSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Layouts\default-2022.dwlt
-        projectPath: UserSettings\Layouts\default-2022.dwlt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Search.settings
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Search.settings
-        projectPath: UserSettings\Search.settings
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-    - commitID: b2199686f5542cee5740994ff3a2671efd75b453
-      mergeA: 
-      mergeB: 
-      authorName: Space Cats
-      authorEmail: kittieswillkillyouall@gmail.com
-      commitEmail: kittieswillkillyouall@gmail.com
-      commitName: Space Cats
-      summary: Initial commit
-      description: 
-      timeString: 2024-07-20T22:38:26.000-04:00
-      commitTimeString: 2024-07-20T22:38:26.000-04:00
-      changes:
-      - path: .gitattributes
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\.gitattributes
-        projectPath: .gitattributes
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: .gitignore
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\.gitignore
-        projectPath: .gitignore
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\.gitignore
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\.gitignore
-        projectPath: Assets\.gitignore
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-    statusAhead: 0
-    lastLogChangedEvent:
-      updatedTimeString: 2024-07-21T21:58:09.425-04:00
-      cacheType: 3
-    lastTrackingStatusChangedEvent:
-      updatedTimeString: 2024-07-21T21:58:10.345-04:00
-      cacheType: 5
-    historyControl:
-      scroll: {x: 0, y: 0}
-      entries:
-      - commitID: 2cef9135236ec7b3df92e4aa1f2475b4aab16a19
-        mergeA: 
-        mergeB: 
-        authorName: Space Cats
-        authorEmail: kittieswillkillyouall@gmail.com
-        commitEmail: kittieswillkillyouall@gmail.com
-        commitName: Space Cats
-        summary: stuff
-        description: 
-        timeString: 2024-07-21T21:36:56.000-04:00
-        commitTimeString: 2024-07-21T21:36:56.000-04:00
-        changes:
-        - path: Assets\Scenes\SpaceCat's Scene.unity
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SpaceCat's
-            Scene.unity
-          projectPath: Assets\Scenes\SpaceCat's Scene.unity
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterMovement.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterMovement.cs
-          projectPath: Assets\Scripts\CharacterMovement.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterScript.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterScript.cs
-          projectPath: Assets\Scripts\CharacterScript.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - commitID: 790e83582ce1831fad7c02d247f0df0acaf23e77
-        mergeA: 
-        mergeB: 
-        authorName: Space Cats
-        authorEmail: kittieswillkillyouall@gmail.com
-        commitEmail: kittieswillkillyouall@gmail.com
-        commitName: Space Cats
-        summary: basic character and basic room
-        description: 
-        timeString: 2024-07-21T15:22:19.000-04:00
-        commitTimeString: 2024-07-21T15:22:19.000-04:00
-        changes:
-        - path: .vsconfig
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\.vsconfig
-          projectPath: .vsconfig
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Actions.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Actions.meta
-          projectPath: Assets\Actions.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Actions\PlayerControls.inputactions
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Actions\PlayerControls.inputactions
-          projectPath: Assets\Actions\PlayerControls.inputactions
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Actions\PlayerControls.inputactions.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Actions\PlayerControls.inputactions.meta
-          projectPath: Assets\Actions\PlayerControls.inputactions.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins.meta
-          projectPath: Assets\Plugins.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub.meta
-          projectPath: Assets\Plugins\GitHub.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor.meta
-          projectPath: Assets\Plugins\GitHub\Editor.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-          projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-          projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-          projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-          projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-          projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-          projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-          projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\System.Threading.dll
-          projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-          projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-          projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\big-logo@2x.png
-          projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-          projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\credits.txt
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\credits.txt
-          projectPath: Assets\Plugins\GitHub\Editor\credits.txt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\credits.txt.meta
-          projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\eula.txt
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\eula.txt
-          projectPath: Assets\Plugins\GitHub\Editor\eula.txt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\eula.txt.meta
-          projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\libsfw.bundle
-          projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-          projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\libsfw.so
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\libsfw.so
-          projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\libsfw.so.meta
-          projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\sfw.net.dll
-          projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x64.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x64.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-          projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-          projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x86.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x86.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-          projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-          projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes.meta
-          projectPath: Assets\Scenes.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\SampleScene.unity
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SampleScene.unity
-          projectPath: Assets\Scenes\SampleScene.unity
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\SampleScene.unity.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SampleScene.unity.meta
-          projectPath: Assets\Scenes\SampleScene.unity.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\SpaceCat's Scene.unity
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SpaceCat's
-            Scene.unity
-          projectPath: Assets\Scenes\SpaceCat's Scene.unity
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\SpaceCat's Scene.unity.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SpaceCat's
-            Scene.unity.meta
-          projectPath: Assets\Scenes\SpaceCat's Scene.unity.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts.meta
-          projectPath: Assets\Scripts.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterDamagable.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterDamagable.cs
-          projectPath: Assets\Scripts\CharacterDamagable.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterDamagable.cs.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterDamagable.cs.meta
-          projectPath: Assets\Scripts\CharacterDamagable.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterMovement.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterMovement.cs
-          projectPath: Assets\Scripts\CharacterMovement.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterMovement.cs.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterMovement.cs.meta
-          projectPath: Assets\Scripts\CharacterMovement.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterScript.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterScript.cs
-          projectPath: Assets\Scripts\CharacterScript.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterScript.cs.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterScript.cs.meta
-          projectPath: Assets\Scripts\CharacterScript.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterShadow.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterShadow.cs
-          projectPath: Assets\Scripts\CharacterShadow.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\CharacterShadow.cs.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterShadow.cs.meta
-          projectPath: Assets\Scripts\CharacterShadow.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\Damagable.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\Damagable.cs
-          projectPath: Assets\Scripts\Damagable.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\Damagable.cs.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\Damagable.cs.meta
-          projectPath: Assets\Scripts\Damagable.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Sprites.meta
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Sprites.meta
-          projectPath: Assets\Sprites.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Packages\manifest.json
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Packages\manifest.json
-          projectPath: Packages\manifest.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Packages\packages-lock.json
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Packages\packages-lock.json
-          projectPath: Packages\packages-lock.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\AudioManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\AudioManager.asset
-          projectPath: ProjectSettings\AudioManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ClusterInputManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\ClusterInputManager.asset
-          projectPath: ProjectSettings\ClusterInputManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\DynamicsManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\DynamicsManager.asset
-          projectPath: ProjectSettings\DynamicsManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\EditorBuildSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\EditorBuildSettings.asset
-          projectPath: ProjectSettings\EditorBuildSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\EditorSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\EditorSettings.asset
-          projectPath: ProjectSettings\EditorSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\GraphicsSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\GraphicsSettings.asset
-          projectPath: ProjectSettings\GraphicsSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\InputManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\InputManager.asset
-          projectPath: ProjectSettings\InputManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\MemorySettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\MemorySettings.asset
-          projectPath: ProjectSettings\MemorySettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\NavMeshAreas.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\NavMeshAreas.asset
-          projectPath: ProjectSettings\NavMeshAreas.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\NetworkManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\NetworkManager.asset
-          projectPath: ProjectSettings\NetworkManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\PackageManagerSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\PackageManagerSettings.asset
-          projectPath: ProjectSettings\PackageManagerSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\Physics2DSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\Physics2DSettings.asset
-          projectPath: ProjectSettings\Physics2DSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\PresetManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\PresetManager.asset
-          projectPath: ProjectSettings\PresetManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ProjectSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\ProjectSettings.asset
-          projectPath: ProjectSettings\ProjectSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ProjectVersion.txt
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\ProjectVersion.txt
-          projectPath: ProjectSettings\ProjectVersion.txt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\QualitySettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\QualitySettings.asset
-          projectPath: ProjectSettings\QualitySettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\SceneTemplateSettings.json
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\SceneTemplateSettings.json
-          projectPath: ProjectSettings\SceneTemplateSettings.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\TagManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\TagManager.asset
-          projectPath: ProjectSettings\TagManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\TimeManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\TimeManager.asset
-          projectPath: ProjectSettings\TimeManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\UnityConnectSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\UnityConnectSettings.asset
-          projectPath: ProjectSettings\UnityConnectSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\VFXManager.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\VFXManager.asset
-          projectPath: ProjectSettings\VFXManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\VersionControlSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\VersionControlSettings.asset
-          projectPath: ProjectSettings\VersionControlSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\XRSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\ProjectSettings\XRSettings.asset
-          projectPath: ProjectSettings\XRSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\EditorUserSettings.asset
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\EditorUserSettings.asset
-          projectPath: UserSettings\EditorUserSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Search.settings
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Search.settings
-          projectPath: UserSettings\Search.settings
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - commitID: b2199686f5542cee5740994ff3a2671efd75b453
-        mergeA: 
-        mergeB: 
-        authorName: Space Cats
-        authorEmail: kittieswillkillyouall@gmail.com
-        commitEmail: kittieswillkillyouall@gmail.com
-        commitName: Space Cats
-        summary: Initial commit
-        description: 
-        timeString: 2024-07-20T22:38:26.000-04:00
-        commitTimeString: 2024-07-20T22:38:26.000-04:00
-        changes:
-        - path: .gitattributes
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\.gitattributes
-          projectPath: .gitattributes
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: .gitignore
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\.gitignore
-          projectPath: .gitignore
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\.gitignore
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\.gitignore
-          projectPath: Assets\.gitignore
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      statusAhead: 0
-      selectedIndex: 0
-    selectedEntry:
-      commitID: 2cef9135236ec7b3df92e4aa1f2475b4aab16a19
-      mergeA: 
-      mergeB: 
-      authorName: Space Cats
-      authorEmail: kittieswillkillyouall@gmail.com
-      commitEmail: kittieswillkillyouall@gmail.com
-      commitName: Space Cats
-      summary: stuff
-      description: 
-      timeString: 2024-07-21T21:36:56.000-04:00
-      commitTimeString: 2024-07-21T21:36:56.000-04:00
-      changes:
-      - path: Assets\Scenes\SpaceCat's Scene.unity
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SpaceCat's
-          Scene.unity
-        projectPath: Assets\Scenes\SpaceCat's Scene.unity
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterMovement.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterMovement.cs
-        projectPath: Assets\Scripts\CharacterMovement.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Scripts\CharacterScript.cs
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterScript.cs
-        projectPath: Assets\Scripts\CharacterScript.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Layouts\default-2022.dwlt
-        projectPath: UserSettings\Layouts\default-2022.dwlt
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-    treeChanges:
-      assets:
-        keys: []
-        values: []
-      folders:
-        keys:
-        - Assets
-        - Assets\Scenes
-        - Assets\Scripts
-        - UserSettings
-        - UserSettings\Layouts
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scripts
-          label: Scripts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: 
-      pathSeparator: \
-      displayRootNode: 0
-      isSelectable: 1
-      isCheckable: 0
-      isUsingGlobalSelection: 0
-      nodes:
-      - path: 
-        label: 
-        level: -1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scenes
-        label: Scenes
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scenes\SpaceCat's Scene.unity
-        label: SpaceCat's Scene.unity
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scenes\SpaceCat's Scene.unity
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scenes\SpaceCat's
-            Scene.unity
-          projectPath: Assets\Scenes\SpaceCat's Scene.unity
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - path: Assets\Scripts
-        label: Scripts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scripts\CharacterMovement.cs
-        label: CharacterMovement.cs
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\CharacterMovement.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterMovement.cs
-          projectPath: Assets\Scripts\CharacterMovement.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - path: Assets\Scripts\CharacterScript.cs
-        label: CharacterScript.cs
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\CharacterScript.cs
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\Assets\Scripts\CharacterScript.cs
-          projectPath: Assets\Scripts\CharacterScript.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        label: default-2022.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-    detailsScroll: {x: 0, y: 0}
-  settingsView:
-    gitPathView:
-      gitPath: 
-      gitLfsPath: 
-      errorMessage: 
-      resetToBundled: 0
-      resetToSystem: 0
-      changingManually: 0
-    hasRemote: 0
-    lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
-    metricsEnabled: 0
-    newRepositoryRemoteUrl: 
-    repositoryRemoteName: 
-    repositoryRemoteUrl: 
-    scroll: {x: 0, y: 0}
-    userSettingsView:
-      gitName: 
-      gitEmail: 
-      newGitName: 
-      newGitEmail: 
-      needsSaving: 0
-      lastCheckUserChangedEvent:
-        updatedTimeString: 
-        cacheType: 0
-    webTimeout: 0
-    gitTimeout: 0
-  locksView:
-    currentRemoteHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
-    keychainHasUpdate: 0
-    locksControl:
-      scroll: {x: 0, y: 0}
-      gitLockEntries: []
-      assets:
-        keys: []
-        values: []
-      gitStatusDictionary:
-        keys: []
-        values: []
-      selectedEntry:
-        gitLock:
-          id: 
-          path: 
-          owner:
-            name: 
-            email: 
-          lockedAtString: 
-        gitFileStatus: 0
-        lockedAt: 1 Jan 0001, 00:00
-    lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2024-07-21T21:57:08.296-04:00
-      cacheType: 1
-    lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
-      cacheType: 7
-    lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-07-21T21:58:10.333-04:00
-      cacheType: 6
-    lockedFiles: []
-    gitStatusEntries: []
-    currentUsername: 
-    unlockFileMenuContent:
-      m_Text: Release Lock
-      m_Image: {fileID: 0}
-      m_Tooltip: 
-    forceUnlockFileMenuContent:
-      m_Text: Release Lock (forced)
-      m_Image: {fileID: 0}
-      m_Tooltip: 
-  hasRemote: 1
-  currentRemoteName: origin
-  currentBranch: master
-  currentRemoteUrl: https://github.com/SpaceCatInvasion/ShadowsAndAlchemyGameJam.git
-  statusAhead: 0
-  statusBehind: 0
-  hasItemsToCommit: 1
-  isTrackingRemoteBranch: 1
-  currentBranchContent:
-    m_Text: master
-    m_Image: {fileID: 0}
-    m_Tooltip: Active branch
-  currentRemoteUrlContent:
-    m_Text: https://github.com/SpaceCatInvasion/ShadowsAndAlchemyGameJam.git
-    m_Image: {fileID: 0}
-    m_Tooltip: Url of the origin remote
-  lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2024-07-22T21:14:28.546-04:00
-    cacheType: 1
-  lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-07-22T21:45:44.278-04:00
-    cacheType: 5
-  lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-07-22T21:45:44.255-04:00
-    cacheType: 6
-  pullButtonContent:
-    m_Text: Pull
-    m_Image: {fileID: 0}
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: -160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
-  pushButtonContent:
-    m_Text: Push
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  refreshButtonContent:
-    m_Text: Refresh
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  fetchButtonContent:
-    m_Text: Fetch
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  repositoryProgressValue: 1
-  repositoryProgressMessage: Listing changed files...
-  appManagerProgressValue: 1
-  appManagerProgressMessage: Initialized
-  connections: []
-  primaryConnectionUsername: 
---- !u!114 &14
+  m_Pos:
+    serializedVersion: 2
+    x: 855.2
+    y: 392
+    width: 306.8
+    height: 383.4
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders: []
+    m_Globs: []
+    m_OriginalText: 
+    m_ImportLogFlags: 0
+    m_FilterByTypeIntersection: 0
+  m_ViewMode: 0
+  m_StartGridSize: 64
+  m_LastFolders: []
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 6a5c0000
+    m_LastClickedID: 23658
+    m_ExpandedIDs: ffffffff000000008c6500000666000010660000126600001466000016660000186600001c6600001e66000000ca9a3bffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff000000008c6500000666000010660000126600001466000016660000186600001e660000a466000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 15}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 64
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 115
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2472,9 +660,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 416.80002
-    width: 763.8
-    height: 358.59998
+    y: 418.4
+    width: 854.2
+    height: 357
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2527,29 +715,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 763.8
-      height: 337.59998
-    m_Scale: {x: 0.39074072, y: 0.39074072}
-    m_Translation: {x: 381.9, y: 168.79999}
+      width: 854.2
+      height: 336
+    m_Scale: {x: 0.38888893, y: 0.3888889}
+    m_Translation: {x: 427.1, y: 168}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -977.37445
+      x: -1098.2571
       y: -432
-      width: 1954.7489
+      width: 2196.5142
       height: 864
     m_MinimalGUI: 1
-  m_defaultScale: 0.39074072
-  m_LastWindowPixelSize: {x: 954.75, y: 448.24997}
+  m_defaultScale: 0.3888889
+  m_LastWindowPixelSize: {x: 1067.75, y: 446.25}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &15
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2571,8 +759,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 763.8
-    height: 322.2
+    width: 854.2
+    height: 323.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2587,8 +775,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -170.40002, y: -26.399994}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: -170.40002, y: -26.399994}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -2613,7 +801,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -2639,7 +827,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -2665,9 +853,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -136.5, y: -124.00001}
-      snapOffsetDelta: {x: 0, y: 0.0000076293945}
-      snapCorner: 3
+      snapOffset: {x: 67.5, y: 86}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
       id: Orientation
       index: 0
       layout: 4
@@ -2808,7 +996,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
@@ -2881,19 +1069,6 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
-    - dockPosition: 0
-      containerId: overlay-toolbar__bottom
-      floating: 0
-      collapsed: 1
-      displayed: 1
-      snapOffset: {x: 134.39996, y: 28.800018}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: AINavigationOverlay
-      index: 0
-      layout: 4
-      size: {x: 0, y: 0}
-      sizeOverriden: 0
     - dockPosition: 1
       containerId: overlay-container--right
       floating: 0
@@ -2904,19 +1079,6 @@ MonoBehaviour:
       snapCorner: 0
       id: Scene View/TrailRenderer
       index: 10
-      layout: 4
-      size: {x: 0, y: 0}
-      sizeOverriden: 0
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 1
-      snapOffset: {x: 48, y: 10.399994}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: UnityEditor.SceneViewCameraOverlay
-      index: 11
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -2931,9 +1093,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.9469314, y: 0.8334097, z: -0.022884905}
+    m_Target: {x: -1.5249416, y: 0.8575075, z: -0.028832203}
     speed: 2
-    m_Value: {x: -2.9469314, y: 0.8334097, z: -0.022884905}
+    m_Value: {x: -1.5249416, y: 0.8575075, z: -0.028832203}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2969,13 +1131,13 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 0
+    m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -2983,9 +1145,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.089218
+    m_Target: 3.6839495
     speed: 2
-    m_Value: 3.089218
+    m_Value: 3.6839495
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -3010,77 +1172,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animator
-    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 73.6
-    width: 671
-    height: 267.8
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_ViewTransforms:
-    m_KeySerializationHelper:
-    - {fileID: 2058232215979380505, guid: 31f91323bc8ca894290bff7d16bca894, type: 2}
-    m_ValueSerializationHelper:
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 31f91323bc8ca894290bff7d16bca894, type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: 2058232215979380505, guid: 31f91323bc8ca894290bff7d16bca894, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  stateMachineGraph: {fileID: 0}
-  stateMachineGraphGUI: {fileID: 0}
-  blendTreeGraph: {fileID: 0}
-  blendTreeGraphGUI: {fileID: 0}
-  m_AutoLiveLink: 1
-  m_MiniTool: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_CurrentEditor: 0
-  m_LayerEditor:
-    m_SelectedLayerIndex: 0
---- !u!114 &17
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3100,9 +1192,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 764.8
+    x: 855.2
     y: 73.6
-    width: 375.60004
+    width: 306.8
     height: 297.4
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -3117,9 +1209,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 30650000
+      m_SelectedIDs: ee760000
       m_LastClickedID: 0
-      m_ExpandedIDs: 2ae3ffff16fbfffff864000022650000
+      m_ExpandedIDs: 
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3135,7 +1227,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -3143,229 +1235,3 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 1d78d2d0e4a064f43b9fd964f07813b0
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_TitleContent:
-    m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 764.8
-    y: 392
-    width: 375.60004
-    height: 383.4
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_ReferencingInstanceIDs: 
-    m_SceneHandles: 
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-    - Assets/Actions
-    m_Globs: []
-    m_OriginalText: 
-    m_ImportLogFlags: 0
-    m_FilterByTypeIntersection: 0
-  m_ViewMode: 0
-  m_StartGridSize: 64
-  m_LastFolders: []
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\kitti\Documents\ShadowsAndAlchemyGameJam
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6a5c0000
-    m_LastClickedID: 23658
-    m_ExpandedIDs: 0000000030650000886500008a6500008c6500008e65000090650000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000030650000886500008a6500008c6500008e65000090650000026d00000a6d00001e6d00003a6d0000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
-  m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 115
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 764.8
-    y: 392
-    width: 375.60004
-    height: 383.4
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
---- !u!114 &20
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1142.4
-    y: 73.6
-    width: 392.59998
-    height: 701.8
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_PreviewResizer:
-    m_CachedPref: -160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
-  m_GlobalObjectId: 
-  m_InspectorMode: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewWindow: {fileID: 0}

@@ -1,0 +1,60 @@
+.panel {
+    background-color: rgba(98, 168, 164, 0.81);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    align-items: center;
+    background-color: rgba(0, 59, 138, 0.31);
+    width: 795px;
+    height: auto;
+    justify-content: flex-start;
+    max-height: 510px;
+    flex-direction: column;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.unity-button {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 603px;
+    font-size: 85px;
+    justify-content: flex-start;
+    align-self: auto;
+    background-color: rgb(97, 173, 190);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: rgb(0, 0, 0);
+    margin-top: 19px;
+    margin-bottom: 14px;
+    transition-property: scale;
+    transition-duration: 0.1s;
+}
+
+.unity-button:hover {
+    background-color: rgb(191, 11, 21);
+    scale: 1.05 1.05;
+    rotate: 2deg;
+}
