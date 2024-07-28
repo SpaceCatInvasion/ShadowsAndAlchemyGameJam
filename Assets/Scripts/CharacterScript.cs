@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterScript : MonoBehaviour
 {
     private CharacterShadow _shadow;
-    private Color _currentColor;
+    public Color _currentColor;
     // Start is called before the first frame update
     void Start()
     {
