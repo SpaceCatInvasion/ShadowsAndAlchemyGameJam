@@ -1,0 +1,9 @@
+.pause-button {
+    transition-property: -unity-background-image-tint-color;
+    transition-duration: 5s;
+}
+
+.pause-button:hover {
+    -unity-background-image-tint-color: rgb(255, 100, 100);
+    scale: 1.05 1.05;
+}

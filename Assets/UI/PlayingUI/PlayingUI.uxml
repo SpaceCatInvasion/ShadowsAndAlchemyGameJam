@@ -1,4 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/PlayingUI/PlayingUI.uss?fileID=7433441132597879392&amp;guid=690e0310cd82f0f4c8406d9974e57daa&amp;type=3#PlayingUI" />
-    <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-self: flex-end; top: 2%; right: 2%; width: 100px; height: 100px;" />
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="PauseButton" class="pause-button" style="align-self: flex-end; top: 2%; right: 2%; width: 150px; height: 150px; background-image: url(&quot;project://database/Assets/Sprites/asfdasdf-removebg-preview.png?fileID=2800000&amp;guid=d23a1d3a18015ae4bb65d35b02853040&amp;type=3#asfdasdf-removebg-preview&quot;); background-color: rgba(188, 188, 188, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+    </ui:VisualElement>
 </ui:UXML>

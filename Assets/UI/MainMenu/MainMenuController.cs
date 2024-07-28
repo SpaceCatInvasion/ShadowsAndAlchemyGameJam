@@ -6,19 +6,18 @@ using UnityEngine.UIElements;
 
 public class MainMenuController : MonoBehaviour
 {
+    public GameObject playingUI;
+
     public VisualElement ui;
 
     public Button playButton;
     public Button optionsButton;
     public Button quitButton;
 
-    private void Awake()
-    {
-        ui = GetComponent<UIDocument>().rootVisualElement;
-    }
 
     private void OnEnable()
     {
+        ui = GetComponent<UIDocument>().rootVisualElement;
         playButton = ui.Q<Button>("PlayButton");
         playButton.clicked += OnPlayButtonClicked;
 
@@ -44,6 +43,7 @@ public class MainMenuController : MonoBehaviour
 
     private void OnPlayButtonClicked()
     {
+        playingUI.SetActive(true);
         gameObject.SetActive(false);
     }
 }
