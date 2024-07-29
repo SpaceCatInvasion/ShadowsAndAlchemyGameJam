@@ -2,10 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterScript : MonoBehaviour
+public enum ColorStatus
+{
+    BLACK,
+    RED,
+    GREEN,
+    BLUE,
+    CYAN,
+    MAGENTA,
+    YELLOW,
+    GRAYSCALE,
+    WHITE
+}
+public class CharacterColorScript : MonoBehaviour
 {
     private CharacterShadow _shadow;
     public Color _currentColor;
+    
     // Start is called before the first frame update
     void Start()
     {
