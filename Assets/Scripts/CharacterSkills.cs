@@ -12,6 +12,7 @@ public class CharacterSkills : MonoBehaviour
     public ParticleSystem blueDash;
     private Rigidbody2D rb;
     private CapsuleCollider2D capsCollider;
+    private int blueManaCost = 20;
 
     private void OnEnable()
     {
@@ -34,16 +35,23 @@ public class CharacterSkills : MonoBehaviour
 
         }
     }
-
+    private bool EnoughMana(int manaCost)
+    {
+        return ManaManager.instance != null && ManaManager.instance.GetMana() >= manaCost;
+    }
     private void BlueAttack()
     {
-        Vector2 dashDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position;
-        dashDir = dashDir.normalized;
-        movement.disable = true;
-        rb.velocity = dashDir * blueDashSpeed;
-        blueDash.Play();
-        capsCollider.excludeLayers += LayerMask.GetMask("Enemy");
-        StartCoroutine(BlueMovementEnable());
+        if (EnoughMana(blueManaCost))
+        {
+            Vector2 dashDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position;
+            dashDir = dashDir.normalized;
+            movement.disable = true;
+            rb.velocity = dashDir * blueDashSpeed;
+            blueDash.Play();
+            capsCollider.excludeLayers += LayerMask.GetMask("Enemy");
+            StartCoroutine(BlueMovementEnable());
+            ManaManager.instance.UseMana(blueManaCost);
+        }
     }
 
     private IEnumerator BlueMovementEnable()
