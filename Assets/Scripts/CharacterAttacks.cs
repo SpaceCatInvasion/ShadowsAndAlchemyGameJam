@@ -10,12 +10,6 @@ public class CharacterAttacks : MonoBehaviour
     public float projspeed;
     public float projfreq;
     private float projtimer = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     private void Update()
     {
         if (projtimer > 0)

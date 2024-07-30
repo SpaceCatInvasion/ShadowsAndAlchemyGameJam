@@ -10,7 +10,7 @@ public class CharacterMovement : MonoBehaviour
     public float moveSpeed;
     private Vector2 _moveDir;
     public InputActionReference move;
-
+    public bool disable = false;
     
     void Update()
     {
@@ -19,7 +19,10 @@ public class CharacterMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(_moveDir.x*moveSpeed, _moveDir.y*moveSpeed);
+        if (!disable)
+        {
+            rb.velocity = new Vector2(_moveDir.x * moveSpeed, _moveDir.y * moveSpeed);
+        }
     }
 
 }

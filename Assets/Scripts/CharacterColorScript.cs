@@ -20,15 +20,19 @@ public class CharacterColorScript : MonoBehaviour
     public Color _currentColor;
     public float colorBaseline;
     public float whiteColorBaseLine;
-    public ColorStatus _colorStatus;
+    private ColorStatus _colorStatus;
+    public static CharacterColorScript instance;
     
     // Start is called before the first frame update
     void Start()
     {
         _shadow = GetComponent<CharacterShadow>();
         _tint = GetComponent<CharacterTintScript>();
-        _currentColor = Color.black;
         _colorStatus = ColorStatus.GRAYSCALE;
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
     // Update is called once per frame
@@ -110,5 +114,9 @@ public class CharacterColorScript : MonoBehaviour
         if (_currentColor.g > colorBaseline) amt++;
         if (_currentColor.b > colorBaseline) amt++;
         return amt;
+    }
+    public ColorStatus GetColorStatus()
+    {
+        return _colorStatus;
     }
 }
