@@ -13,7 +13,12 @@ public class CharacterSkills : MonoBehaviour
     private Rigidbody2D rb;
     private CapsuleCollider2D capsCollider;
     private int blueManaCost = 20;
-
+    private Dictionary<ColorStatus, int> _manaCosts = new Dictionary<ColorStatus, int>();
+    private void Start()
+    {
+        _manaCosts.Clear();
+        _manaCosts.Add(ColorStatus.BLUE, 20);
+    }
     private void OnEnable()
     {
         skill.action.started += UseSkill;
@@ -41,7 +46,7 @@ public class CharacterSkills : MonoBehaviour
     }
     private void BlueAttack()
     {
-        if (EnoughMana(blueManaCost))
+        if (EnoughMana(_manaCosts[ColorStatus.BLUE]))
         {
             Vector2 dashDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position;
             dashDir = dashDir.normalized;

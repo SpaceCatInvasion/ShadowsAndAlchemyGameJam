@@ -27,7 +27,7 @@ public class Damagable : MonoBehaviour
     }
     protected virtual void Die()
     {
-        EnemyManager.enemiesDead++;
+        EnemyManager.instance.enemiesDead++;
         Destroy(gameObject);
     }
 }

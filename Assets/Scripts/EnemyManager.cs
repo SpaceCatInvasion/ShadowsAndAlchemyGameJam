@@ -4,5 +4,21 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    static public int enemiesDead = 0;
+    public static EnemyManager instance;
+    public int enemiesDead = 0;
+    public GameObject player;
+    public float enemySlow;
+    public float enemySpeed;
+    
+    private void OnEnable()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 }

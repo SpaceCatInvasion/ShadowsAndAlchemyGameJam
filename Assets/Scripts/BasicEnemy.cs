@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class BasicEnemy : Damagable
 {
-    
+    private Vector2 dir = new Vector2(0,0);
+    private Vector3 movedir = new Vector3(0,0,0);
+    private Rigidbody2D rb;
     private void Awake()
     {
         health = 25;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -20,5 +23,14 @@ public class BasicEnemy : Damagable
                 player.TakeDamage(1);
             }
         }
+    }
+    private void Update()
+    {
+        movedir = -(gameObject.transform.position - EnemyManager.instance.player.transform.position);
+    }
+    private void FixedUpdate()
+    {
+        dir = (dir * EnemyManager.instance.enemySlow + new Vector2(movedir.x, movedir.y)).normalized * EnemyManager.instance.enemySpeed;
+        rb.velocity = dir;
     }
 }
