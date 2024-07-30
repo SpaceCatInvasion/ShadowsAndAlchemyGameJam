@@ -9,7 +9,7 @@ public class BasicEnemy : Damagable
     private Rigidbody2D rb;
     private void Awake()
     {
-        health = 25;
+        health = 200;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -21,6 +21,8 @@ public class BasicEnemy : Damagable
             if (player != null)
             {
                 player.TakeDamage(1);
+                dir *= -0.2F;
+                movedir *= -0.2F;
             }
         }
     }
@@ -30,7 +32,14 @@ public class BasicEnemy : Damagable
     }
     private void FixedUpdate()
     {
-        dir = (dir * EnemyManager.instance.enemySlow + new Vector2(movedir.x, movedir.y)).normalized * EnemyManager.instance.enemySpeed;
-        rb.velocity = dir;
+        if (canmove)
+        {
+            dir = (dir * EnemyManager.instance.enemySlow + new Vector2(movedir.x, movedir.y)).normalized * EnemyManager.instance.enemySpeed;
+            rb.velocity = dir;
+        }
+        else
+        {
+            dir = rb.velocity;
+        }
     }
 }

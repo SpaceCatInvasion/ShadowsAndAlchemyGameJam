@@ -6,6 +6,17 @@ public class Damagable : MonoBehaviour
 {
     protected float health = 100;
     protected float immunityFrames = 0;
+    protected bool canmove = true;
+    public void StopMove(float seconds)
+    {
+        canmove = false;
+        StartCoroutine(StartMove(seconds));
+    }
+    private IEnumerator StartMove(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        canmove = true;
+    }
     public virtual void TakeDamage(float damage)
     {
         if (immunityFrames <= 0)
@@ -15,6 +26,7 @@ public class Damagable : MonoBehaviour
             {
                 Die();
             }
+            Debug.Log(health);
         }
     }
     public virtual void Heal(int healHp)
