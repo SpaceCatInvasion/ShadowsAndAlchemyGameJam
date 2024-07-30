@@ -19,13 +19,17 @@ public class CharacterSkills : MonoBehaviour
     private bool continueAttack = true;
     public float yellowAttackRate;
     public float yellowSpeed;
+    public GameObject PurplePrefab;
+    public GameObject PurpleTrailPrefab;
+
     private void Start()
     {
         _manaCosts.Clear();
         _manaCosts.Add(ColorStatus.BLUE, 20);
         _manaCosts.Add(ColorStatus.RED, 40);
-        _manaCosts.Add(ColorStatus.GREEN, 80);
+        _manaCosts.Add(ColorStatus.GREEN, 70);
         _manaCosts.Add(ColorStatus.YELLOW, 2);
+        _manaCosts.Add(ColorStatus.MAGENTA, 90);
     }
     private void OnEnable()
     {
@@ -59,6 +63,9 @@ public class CharacterSkills : MonoBehaviour
                 break;
             case ColorStatus.YELLOW:
                 UseYellowAttack();
+                break;
+            case ColorStatus.MAGENTA:
+                UsePurpleAttack();
                 break;
 
         }
@@ -131,5 +138,25 @@ public class CharacterSkills : MonoBehaviour
         ManaManager.instance.UseMana(_manaCosts[ColorStatus.YELLOW]);
         yield return new WaitForSeconds(yellowAttackRate);
         if(continueAttack && EnoughMana(_manaCosts[ColorStatus.YELLOW])) StartCoroutine(ContinuousYellow());
+    }
+
+    private void UsePurpleAttack()
+    {
+        if (EnoughMana(_manaCosts[ColorStatus.MAGENTA]))
+        {
+            Vector3 attackPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if(Physics.Raycast(cameraRay, out RaycastHit hitObject))
+            {
+                if (hitObject.collider.CompareTag("Wall"))
+                {
+                    attackPos = attackPos - (attackPos - transform.position)*0.2F;
+                }
+            }
+            attackPos.z = 0;
+            Instantiate(PurplePrefab, attackPos, Quaternion.Euler(new Vector3(0, 0, 0))).GetComponent<PurpleAttack>().purplePlace = Instantiate(PurpleTrailPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+            gameObject.transform.position = attackPos;
+            ManaManager.instance.UseMana(_manaCosts[ColorStatus.MAGENTA]);
+        }
     }
 }

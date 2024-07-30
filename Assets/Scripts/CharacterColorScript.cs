@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum ColorStatus
 {
@@ -22,6 +23,9 @@ public class CharacterColorScript : MonoBehaviour
     public float whiteColorBaseLine;
     private ColorStatus _colorStatus;
     public static CharacterColorScript instance;
+    public Image red;
+    public Image green;
+    public Image blue;
     
     // Start is called before the first frame update
     void Start()
@@ -33,6 +37,10 @@ public class CharacterColorScript : MonoBehaviour
         {
             instance = this;
         }
+        else
+        {
+            Destroy(this);
+        }
     }
 
     // Update is called once per frame
@@ -41,6 +49,7 @@ public class CharacterColorScript : MonoBehaviour
         UpdateColorStatus();
         _shadow.ChangeColor(_currentColor);
         _tint.ChangeColor(_colorStatus);
+        UpdateColorUI();
     }
 
     private void UpdateColorStatus()
@@ -118,5 +127,11 @@ public class CharacterColorScript : MonoBehaviour
     public ColorStatus GetColorStatus()
     {
         return _colorStatus;
+    }
+    private void UpdateColorUI()
+    {
+        red.fillAmount = _currentColor.r;
+        green.fillAmount = _currentColor.g;
+        blue.fillAmount = _currentColor.b;
     }
 }
