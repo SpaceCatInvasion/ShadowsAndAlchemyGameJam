@@ -2,25 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedAttack : Damager
+public class GreenAttack : Damager
 {
-    private float knockback=10;
     private void Awake()
     {
-        damage = 40;
-        Destroy(gameObject, 0.5F);
+        damage = 10;
+        Destroy(gameObject, 2F);
     }
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Damagable damagable = collision.gameObject.GetComponent<Damagable>();
         Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
         if (damagable != null && rb != null)
         {
-            float angle = (transform.rotation.eulerAngles.z - 90) * Mathf.Deg2Rad;
-            rb.velocity = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * knockback;
+            rb.velocity = new Vector2(0, 0);
             DealDamage(damagable);
-            damagable.StopMove(0.2F);
+            damagable.StopMove(2F);
         }
     }
 }
+
