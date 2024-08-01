@@ -21,6 +21,9 @@ public class CharacterSkills : MonoBehaviour
     public float yellowSpeed;
     public GameObject PurplePrefab;
     public GameObject PurpleTrailPrefab;
+    public GameObject CyanPrefab;
+    private bool validCyanAttack;
+    public float cyanCharge;
 
     private void Start()
     {
@@ -29,7 +32,8 @@ public class CharacterSkills : MonoBehaviour
         _manaCosts.Add(ColorStatus.RED, 40);
         _manaCosts.Add(ColorStatus.GREEN, 70);
         _manaCosts.Add(ColorStatus.YELLOW, 2);
-        _manaCosts.Add(ColorStatus.MAGENTA, 90);
+        _manaCosts.Add(ColorStatus.MAGENTA, 80);
+        _manaCosts.Add(ColorStatus.CYAN, 5);
     }
     private void OnEnable()
     {
@@ -46,6 +50,8 @@ public class CharacterSkills : MonoBehaviour
     public void CancelAttack(InputAction.CallbackContext context)
     {
         continueAttack = false;
+        validCyanAttack = false;
+        movement.disable = false;
     }
     public void UseSkill(InputAction.CallbackContext context)
     {
@@ -66,6 +72,9 @@ public class CharacterSkills : MonoBehaviour
                 break;
             case ColorStatus.MAGENTA:
                 UsePurpleAttack();
+                break;
+            case ColorStatus.CYAN:
+                UseCyanAttack();
                 break;
 
         }
@@ -157,6 +166,38 @@ public class CharacterSkills : MonoBehaviour
             Instantiate(PurplePrefab, attackPos, Quaternion.Euler(new Vector3(0, 0, 0))).GetComponent<PurpleAttack>().purplePlace = Instantiate(PurpleTrailPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
             gameObject.transform.position = attackPos;
             ManaManager.instance.UseMana(_manaCosts[ColorStatus.MAGENTA]);
+        }
+    }
+    private void UseCyanAttack()
+    {
+        if (EnoughMana(100))
+        {
+            validCyanAttack = true;
+            movement.disable = true;
+            StartCoroutine(TakeCyanMana());
+            StartCoroutine(CyanAttack());
+        }
+    }
+    private IEnumerator TakeCyanMana()
+    {
+        yield return new WaitForSeconds(cyanCharge * _manaCosts[ColorStatus.CYAN] / 100F);
+        if (validCyanAttack)
+        {
+            ManaManager.instance.UseMana(_manaCosts[ColorStatus.CYAN]);
+            StartCoroutine(TakeCyanMana());
+        }
+    }
+    private IEnumerator CyanAttack()
+    {
+        yield return new WaitForSeconds(cyanCharge);
+        if (validCyanAttack)
+        {
+            Vector3 attackDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position;
+            float angle = Mathf.Rad2Deg * Mathf.Atan(attackDir.y / attackDir.x);
+            if (attackDir.x < 0) angle += 180;
+            angle %= 360;
+            Instantiate(CyanPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, angle)));
+            movement.disable = false;
         }
     }
 }

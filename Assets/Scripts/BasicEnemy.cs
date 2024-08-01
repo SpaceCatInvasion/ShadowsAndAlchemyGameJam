@@ -29,6 +29,10 @@ public class BasicEnemy : Damagable
     private void Update()
     {
         movedir = -(gameObject.transform.position - EnemyManager.instance.player.transform.position);
+        if (immunityFrames > 0)
+        {
+            immunityFrames -= Time.deltaTime;
+        }
     }
     private void FixedUpdate()
     {

@@ -17,7 +17,7 @@ public class Damagable : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         canmove = true;
     }
-    public virtual void TakeDamage(float damage)
+    public virtual bool TakeDamage(float damage)
     {
         if (immunityFrames <= 0)
         {
@@ -27,13 +27,15 @@ public class Damagable : MonoBehaviour
                 Die();
             }
             Debug.Log(health);
+            return true;
         }
+        return false;
     }
     public virtual void Heal(int healHp)
     {
         health += healHp;
     }
-    public virtual void SetImmunityFrames(int frames)
+    public virtual void SetImmunityFrames(float frames)
     {
         immunityFrames = frames;
     }
@@ -42,4 +44,5 @@ public class Damagable : MonoBehaviour
         EnemyManager.instance.enemiesDead++;
         Destroy(gameObject);
     }
+    
 }

@@ -13,7 +13,7 @@ public class CharacterDamagable : Damagable
     {
         hp = maxHp;
     }
-    public override void TakeDamage(float damage)
+    public override bool TakeDamage(float damage)
     {
         if (immunityFrames <= 0)
         {
@@ -21,19 +21,14 @@ public class CharacterDamagable : Damagable
             LivesManager.instance.TakeLife();
             immunityFrames = defaultImmunityFrames;
             StartCoroutine(HitFlashOff());
+            return true;
         }
+        return false;
     }
     public override void Heal(int health)
     {
         hp = Mathf.Min(hp + health, maxHp);
         LivesManager.instance.AddLives(health);
-    }
-    private void Update()
-    {
-        if (immunityFrames > 0)
-        {
-            immunityFrames -= Time.deltaTime;
-        }
     }
     private IEnumerator HitFlashOff()
     {
@@ -55,6 +50,13 @@ public class CharacterDamagable : Damagable
         if(immunityFrames > 0)
         {
             StartCoroutine(HitFlashOff());
+        }
+    }
+    private void Update()
+    {
+        if (immunityFrames > 0)
+        {
+            immunityFrames -= Time.deltaTime;
         }
     }
 }

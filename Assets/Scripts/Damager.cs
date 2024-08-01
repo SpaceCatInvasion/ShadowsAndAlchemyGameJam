@@ -10,4 +10,11 @@ public class Damager : MonoBehaviour
     {
         damagable.TakeDamage(damage);
     }
+    protected virtual void DealDamage(Damagable damagable, float immunity)
+    {
+        if (damagable.TakeDamage(damage))
+        {
+            damagable.SetImmunityFrames(immunity);
+        }
+    }
 }

@@ -8522,7 +8522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f50b8ee71726494c88d81e3ba384564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentColor: {r: 1, g: 0, b: 1, a: 0}
+  _currentColor: {r: 0, g: 1, b: 1, a: 0}
   colorBaseline: 0.15
   whiteColorBaseLine: 0.8
   red: {fileID: 1460354864}
@@ -8629,6 +8629,8 @@ MonoBehaviour:
   yellowSpeed: 15
   PurplePrefab: {fileID: 9155495757289031253, guid: 657129e392e2e504b9eb332a9ae1155c, type: 3}
   PurpleTrailPrefab: {fileID: 8190589848327329293, guid: 9a83e72472767684a9590adcd0462ec8, type: 3}
+  CyanPrefab: {fileID: 4949327010448649613, guid: 9e5f81242787c1a41a480b73dbb3db88, type: 3}
+  cyanCharge: 1
 --- !u!1 &1975225762
 GameObject:
   m_ObjectHideFlags: 0
